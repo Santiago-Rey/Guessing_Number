@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:useDefaultMargins="true">
+
+    <TextView
+        android:id="@+id/guessNumber"
+        android:text="Number Guess Game!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal"
+        android:textSize="28dp"
+        />
+
+    <TextView
+        android:id="@+id/textDesc"
+        android:text="Try to guess the number I´m thinking of, from 1-1000!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/guessNumber"
+        android:gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/textNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:hint="Type a number"
+        />
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:text="Accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textNumber"
+        app:layout_constraintStart_toStartOf="@id/textNumber"
+        app:layout_constraintEnd_toEndOf="@id/textNumber"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/btnAgain"
+        android:text="Play Again"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/btnAccept"
+        app:layout_constraintEnd_toEndOf="@id/btnAccept"
+        />
+
+    <TextView
+        android:id="@+id/textCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnAccept"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
